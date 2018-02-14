@@ -1,0 +1,98 @@
+.activ
+	background-color: #7d7d8c
+	h1
+		color: $col_wh
+.activ_box
+	margin-bottom: 30px
+	position: relative
+	box-shadow: $box_shad
+	overflow: hidden
+	cursor: pointer
+	img
+		position: relative
+		width: 100%
+		+transit(all, 0.4s, ease-in-out)	
+.activ_box
+	&:hover img
+		transform: scale(1.2)
+.activ_box
+	&:hover .hover_box
+		opacity: 1
+.activ_box
+	&:hover .hover_box h2
+		opacity: 1
+		transform: translateY(0)
+.activ_box
+	&:hover a.read
+		opacity: 1
+		transform: translateY(0)
+.activ_box
+	&:hover a.read
+		&:hover
+			background-color: $col_a
+			color: #656775
+.hover_box
+	background-color: rgba(101, 100, 100, 0.63)
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	cursor: pointer
+	overflow: hidden
+	+transit(all, 0.4s, ease-in-out)
+	opacity: 0
+	h2
+		+sect_h1('OpenSans', 20px, 30px)
+		color: $col_wh
+		background: #272b40
+		position: absolute
+		top: 25px
+		left: 0
+		padding: 10px 0
+		width: 100%
+		text-align: center
+		text-transform: uppercase
+		transform: translateY(-200px)
+		opacity: 0
+		+transit(all, 0.4s, ease-in-out)
+.a_wrap
+	position: absolute
+	width: 100%
+	bottom: 20px
+	text-align: center
+a.read
+    padding: 10px 15px
+    border-radius: 5px
+    background-color: #656775
+    border: 1px solid #444343
+    text-transform: uppercase
+    box-shadow: $box_shad
+    +transit(all, 0.5s, ease-in-out)
+    +sect_p('OpenSans', 15px, 15px)
+    color: $col_a
+    transform: translateY(100px)
+    opacity: 0
+    text-decoration: none
+.visible
+	display: block
+.popup_descr
+	background-color: #fff
+	position: relative
+	max-width: 500px
+	margin: auto
+	h3
+		font-family: "OpenSans Bold"
+		font-size: 18px
+		line-height: 30px
+		color: #555566
+		padding: 20px 0 0
+		text-align: center
+	p
+		font-family: "OpenSans"
+		font-size: 16px
+		line-height: 25px
+		color: #555566
+		padding: 20px
+	img
+		width: 100%

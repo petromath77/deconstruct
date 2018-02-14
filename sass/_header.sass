@@ -1,0 +1,71 @@
+header
+	background: url('../img/head_back.jpg') center no-repeat
+	background-size: cover
+	background-attachment: fixed
+	min-height: 100vh
+	.head_desc
+		margin-top: 300px
+		text-align: center
+		p
+			+sect_p('OpenSans Bold', 30px, 40px)
+			color: $col_wh
+			font-weight: bold
+			text-transform: uppercase
+			letter-spacing: 1px
+			width: 70%
+			margin: 0 auto 30px
+			span
+				color: #7d7d8c
+.navbar-inverse
+	background-color: rgba(39, 43, 64, 0.90)
+	border: 0px
+	padding: 7px 0px 15px
+	margin: 0px
+	z-index: 100
+	&:hover
+		background-color: rgba(39, 43, 64, 1)
+.navbar-brand
+	height: 47px
+	padding: 0px
+	padding-left: 20px
+.navbar-brand
+	img
+		margin-top: 5px
+.navbar-right
+	padding-top: 10px
+	padding-right: 20px
+	li
+		margin-right: 10px
+		margin-left: 0px!important
+	li:last-child
+		margin-right: 0px	
+	li
+		a
+			padding: 10px 15px
+			+sect_p('OpenSans', 16px, 16px)
+			color: $col_a
+			border: 1px solid rgba(204, 204, 204, 0)
+			+transit(all, 0.5s, ease-in-out)
+			text-transform: uppercase
+.nav.nav-pills.navbar-right>li>a:focus,.nav.nav-pills.navbar-right>li>a:hover
+			background-color: #656775
+			color: $col_hov
+			border: 1px solid #828282
+a.learn
+    padding: 10px 15px
+    border-radius: 5px
+    background-color: #656775
+    border: 1px solid #444343
+    text-transform: uppercase
+    box-shadow: $box_shad
+    +transit(all, 0.5s, ease-in-out)
+    +sect_p('OpenSans', 15px, 15px)
+    text-decoration: none
+    color: $col_a
+    z-index: 99
+a.learn
+		&:hover
+			background-color: $col_a
+			color: #656775
+   
+		
